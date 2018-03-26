@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="275.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="catalog.controller.login.LogInViewController">
+    <center>
+        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER">
+                    <children>
+                        <Label text="Authorization">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Separator minHeight="5.0" />
+                <HBox alignment="CENTER" minHeight="60.0">
+                    <children>
+                        <TextField fx:id="userField" prefHeight="40.0" promptText="Username" HBox.hgrow="ALWAYS">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" minHeight="60.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <PasswordField fx:id="passField" prefHeight="40.0" promptText="Password" HBox.hgrow="ALWAYS">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </PasswordField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" minHeight="60.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="logInBtn" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" text="Log in">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="guestBtn" minHeight="40.0" minWidth="145.0" mnemonicParsing="false" text="Log in as guest">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="signUpBtn" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" text="Sign up">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>
